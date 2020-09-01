@@ -14,4 +14,7 @@ RUN npm install --no-package-lock
 ENV CHROME_LOCATION /usr/bin/chromium-browser
 EXPOSE 3000
 
+# Expose Chromium remote debugging port for connecting Puppeteer
+EXPOSE 9222
+
 CMD ["node", "server.js"]
