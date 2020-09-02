@@ -2,7 +2,7 @@
 var prerender = require('./lib');
 
 var server = prerender({
-    chromeFlags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222', '--hide-scrollbars', '--disable-dev-shm-usage'],
+    chromeFlags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222', '--remote-debugging-address=0.0.0.0', '--hide-scrollbars', '--disable-dev-shm-usage'],
     forwardHeaders: true,
     waitUntil: 'load'
 });
